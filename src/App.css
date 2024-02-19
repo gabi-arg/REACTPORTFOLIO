@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+
+:root {
+    --oscuro: #0D1F23;
+    --bluedark: #132e35;
+    --blue: #2D4A53;
+    --blueligth: #69818D;
+    --ligthgrey: #afb3b7;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+/*Background*/
+.backgroud {
+    width: 1500px;
+    height: 770px;
+    object-fit: cover;
+    z-index: 0;
+}
+/*Inicio*/
+.container {
+    height: 80% ;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+    text-align: center;
+    background-color:rgba(119, 136, 153, 0.7);
+   
+}
+/*Navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    width: 80%;
+    height: 8rem;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    border: none;
+    z-index: 2;
+    gap: 2rem;
+}
+.navbar a {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 2.4rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar .active,
+.navbar  a:hover{
+    font-size: 1.2rem;
+    color: var(--bluedark);
+    transition: 300ms;
+}
+/*Inicio*/
+.section-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid white;
+    width:50rem;
+    height: 15rem;
+    position: absolute;
+    top: 25%;
+    left: 16%;
+    z-index: 1;
+}
+.section-presentation h1{
+    font-size: 3rem;
+    margin: 2rem ;
+}
+/*Sobre Mi*/
+.section-about-me {
+    width: 80%;
+    height: 65%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 13%;
+    left: 10%;
+}
+.foto-perfil {
+    width: 17rem;
+    margin-left: 7rem;
+    margin-top: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.about-me-text {
+    width: 70%;
+    height: 100%;
+    margin: 70px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.about-me-text p {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 3rem;
+    line-height: 1.6rem;
+}
+.btn {
+    width: 12rem;
+    height: 5rem;
+    background-color: var(--borde-negro);
+    border-radius: 1rem;
+    position: relative;
+    padding: 1.2rem 0.8rem;
+    cursor: pointer;
+    border: 1px solid white;
+
+}
+.btn  a {
+    position: absolute;
+    right: 9%;
+    top: 38%;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    
+}
+.btn img {
+    position: absolute;
+    right: 80%;
+    bottom: 38%;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+/*Habilidades*/
+.skill{
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    gap: 2rem
+}
+.skill img {
+    width: 6rem;
+    height:6rem;
+    
+}
+/*Proyectos*/
+.project-container-first{
+    display: flex;
+}
+.project-container-seconds{
+    display: flex;
+}
+.project-container-desktop {
+    width: 23rem;
+    height: 10rem;
+    object-fit: cover;
+    padding: 0.2rem;
+    position: absolute;
+    left: 15%;
+    top: 28%;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px 4px var(--oscuro);
+}
+.project-container-mobile{
+    width: 10rem;
+    height: 16rem;
+    object-fit: cover;
+    position: absolute;
+    padding: 0.5rem;
+    top: 28%;
+    left: 47%;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px 4px var(--oscuro);
+}
+.btn-project{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    gap: 0.5rem;
+}
+.btn-project a{
+    width: 8rem;
+    height: 3rem;
+    padding-top: 1rem;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.project-description{
+    width: 32%;
+    font-size: 1rem;
+    font-weight: 300;
+    position: absolute;
+    top: 30%;
+    left: 63%;
+    line-height: 1.5rem;
+    text-align: start;
+}
+.project-slider{
+    width: 6rem;
+    height: 2rem;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    border-radius: 5px;
+    border: 1px solid white;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+/*Contacto*/
+.section-contact{
+    display: flex;
+    gap: 3.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    left: 38%;
+
+}
+/*footer*/
+.footer{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    border: none;
+    z-index: 2;
+    gap: 3rem;
+}
+@media (min-width:320px)and (max-width:440px){
+    .backgroud{
+        width:440px ;
+    }
+    .container{
+        width: 90%;
+        height: 70%;
+        left: 5%;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .navbar{
+        width: 100%;
+        top: -5%;
+        left:-2%;
+        gap: 5px;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar a{
+        font-size: 8px;
+    }
+    .section-presentation{
+        width: 19rem;
+        height: 21rem;
+        top: 10%;
+        left: 10%;
+        z-index: 1;
+    }
+   
+    .section-about-me{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 30%;
+        left: 5%;
+        margin: 0;
+        padding: 0;
+
+    }
+    .section-about-me .foto-perfil{
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: -50%;
+        left: 10%;
+    }
+    .btn img{
+        display: flex;
+        padding-top: 12px;
+    }
+    .about-me-text{
+        margin: 1rem 0rem;
+    }
+    
+    .about-me-text p{
+        margin: 0;
+        font-size: 12px;
+        margin-bottom: 2rem;
+    }
+    .skill{
+        display: grid;
+        margin-left: 4rem;
+        grid-template-columns: 1fr 1fr;
+        top: 20%;
+        left: 5%;
+
+    }
+    .section-projects{
+        width: 100%;
+        
+    }
+    .project-container-desktop {
+        width: 17rem;
+        height: 9rem;
+        object-fit: cover;
+        top: 15%;
+    }
+    .project-container-mobile{
+        width: 7rem;
+        height: 12rem;
+        padding: 0.2rem;
+        top: 35%;
+        left: 55%;
+    }
+    .btn-project{
+        display: flex;
+        flex-direction: column;
+        top: 55%;
+    }
+    .project-slider{
+        top: 90%;
+        left: 60%;
+    }
+    .project-description{
+        display: none;
+    }
+    .section-contact{
+        gap: 0.5rem;
+        top: 35%;
+        left: 25%;
+    }
+    .footer{
+        position: absolute;
+        top: 110%;
+        left: 30%;
+   }
+
+}
