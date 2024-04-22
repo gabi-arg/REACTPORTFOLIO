@@ -23,8 +23,8 @@ export const Proyectos = () => {
                     <img className="project-container-desktop" src={porfolioLaptop} alt="porfolioLaptop" />
                     <img className="project-container-mobile" src={porfolioPhone} alt="porfolioPhone" />
                     <div className="btn-project">
-                         <a href="">Demo</a>
-                         <a href="https://github.com/gabi-arg/PORTFOLIO">Code</a>
+                         <a href="/">Demo</a>
+                         <a href="https://github.com/gabi-arg/REACTPORTFOLIO">Code</a>
                     </div>
                     <p className='project-description'>
                     Dentro de mi portafolio, destaco un proyecto muy especial: ¡el mismo portafolio que estás explorando ahora mismo! Este proyecto es un testimonio de mis habilidades en desarrollo web, utilizando tecnologías como React, componentes modulares y diseño con CSS. Presenta una experiencia de usuario fluida con navegación a través de React Router y destaca la versatilidad de mi trabajo con una interfaz dinámica y profesional.
