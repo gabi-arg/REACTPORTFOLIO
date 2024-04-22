@@ -284,12 +284,13 @@
         width:440px ;
     }
     .container{
-        width: 90%;
-        height: 70%;
-        left: 5%;
+        width: 85%;
+        height: 90%;
+        left: 3%;
     }
     h2{
         font-size: 2rem;
+    
     }
     .navbar{
         width: 100%;
@@ -303,11 +304,22 @@
         font-size: 8px;
     }
     .section-presentation{
-        width: 19rem;
+        width: 17rem;
         height: 21rem;
         top: 10%;
-        left: 10%;
+        left: 5%;
         z-index: 1;
+        border: 3px solid white;
+    }
+    .section-presentation h1{
+        font-size: 3rem;
+        position: absolute;
+        left: -7%;
+        top: 5%;
+    }
+    .section-presentation p{
+        position: absolute;
+        top: 70%;
     }
    
     .section-about-me{
@@ -323,18 +335,26 @@
     }
     .section-about-me .foto-perfil{
         display: flex;
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
         position: absolute;
-        top: -50%;
-        left: 10%;
+        top: 13%;
+        left: 36%;
+    }
+    .btn{
+        height: 3rem;
+        position: absolute;
+        top: 50%;
     }
     .btn img{
         display: flex;
-        padding-top: 12px;
+        padding-top: 2px;
     }
     .about-me-text{
-        margin: 1rem 0rem;
+        width: 85%;
+        position: absolute;
+        top: 35%;
+        left: 10%;
     }
     
     .about-me-text p{
@@ -347,11 +367,12 @@
         margin-left: 4rem;
         grid-template-columns: 1fr 1fr;
         top: 20%;
-        left: 5%;
+        left: -5%;
 
     }
-    .section-projects{
-        width: 100%;
+    .projects{
+        width: 90%;
+
         
     }
     .project-container-desktop {
@@ -359,6 +380,7 @@
         height: 9rem;
         object-fit: cover;
         top: 15%;
+        left: 5%;
     }
     .project-container-mobile{
         width: 7rem;
@@ -370,7 +392,8 @@
     .btn-project{
         display: flex;
         flex-direction: column;
-        top: 55%;
+        top: 50%;
+        left: 8%;
     }
     .project-slider{
         top: 90%;
@@ -380,14 +403,24 @@
         display: none;
     }
     .section-contact{
+        width: 60%;
         gap: 0.5rem;
-        top: 35%;
-        left: 25%;
+        top: 20%;
+        left: 15%;
+    }
+    .contact-btn{
+        height: 2rem;
+        padding: 1rem 0 2rem 0;
+    }
+    .footer-redes{
+        position: absolute;
+        top: 110%;
+        left: 20%;
     }
     .footer{
         position: absolute;
-        top: 110%;
-        left: 30%;
+        top: 120%;
+        left: 18%;
    }
 
 }
