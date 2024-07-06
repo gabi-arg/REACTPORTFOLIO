@@ -1,6 +1,6 @@
 import React from 'react'
 import perfil from "../imagenes/foto-perfil.png"
-import Curriculum from "../imagenes/GABRIELADURANCV.pdf"
+import Curriculum from "../imagenes/GabrielaDuranCV.pdf"
 import flechaDescarga from '../imagenes/descargas.png'
 export const SobreMi = () => {
   return (
