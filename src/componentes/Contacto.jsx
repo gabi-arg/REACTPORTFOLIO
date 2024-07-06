@@ -26,8 +26,8 @@ export const Contacto = () => {
       <section className="section-contact">
       <form ref={refForm} onSubmit={handleSubmit} className='contact-container'>
         <input name='name' type='text' placeholder='Name' required className='contact-input'/>
-        <input name='email' type='email' placeholder='englishinstitute@gmail.com' required className='contact-input'/>
-        <textarea name='message' type='text' placeholder='Ingrese su consulta' maxLength='600' required className='contact-textarea'/>
+        <input name='email' type='email' placeholder='tuemail@gmail.com' required className='contact-input'/>
+        <textarea name='message' type='text' placeholder='Escribe tu mensaje' maxLength='600' required className='contact-textarea'/>
         <button className='contact-btn'>Send</button>
       </form>
   
